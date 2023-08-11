@@ -1,39 +1,37 @@
 #include <stdio.h>
 /**
-  *main - entry point
-  *Return: 0 if succes
-  */
+ * main - print differente combination of three digit-numbers
+ * Return: return 0 and exit
+ */
 int main(void)
 {
-	/*delcalration */
-	int a = '0';
-	int b, c;
+	int a;
+	int b;
+	int c;
+	int z = 0;
 
-	/* intialization */
-	while (a <= '7')
+	for (a = '0'; a <= '7'; a++)
 	{
-		b = a + 1;
-		while (b <= '8')
+		for (b = '0'; b <= '8'; b++)
 		{
-			while (c <= '9')
+			for (c = '0'; c <= '9'; c++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				if (a == '7' && b == '8' && c == '9')
+				if (a < b && b <= c && a != b && b != c)
 				{
-					putchar('\n');
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					z++;
+					if (z < 126)
+					{
+						putchar (',');
+						putchar (' ');
+					}
 				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				c++;
 			}
-			b++;
 		}
-		a++;
+		z++;
 	}
+	putchar('\n');
 	return (0);
 }
