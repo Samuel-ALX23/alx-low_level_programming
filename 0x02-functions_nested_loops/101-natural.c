@@ -1,5 +1,4 @@
-#include "annex.h"
-
+#include <stdio.h>
 /**
  * main - Main void
  *
