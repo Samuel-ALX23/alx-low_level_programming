@@ -1,0 +1,1 @@
+The purpose of the variadic functions test files is to ensure that the variadic functions in your code are working correctly and producing the expected results. These tests help to identify and catch any potential issues or bugs related to variadic functions, such as incorrect argument handling or unexpected behavior.
