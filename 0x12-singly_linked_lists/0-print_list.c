@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * print_list - prints all formated list of the linked list
- * @*h: Pointer to the head of the linked list
- *
+ * print_list - a function that prints all the elements of a list_t list
+ * @h: Pointer to the head of the single linked list
  * Return: sam number node to be printed
  */
 
