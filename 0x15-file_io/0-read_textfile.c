@@ -4,7 +4,6 @@
  * read_textfile - Reads a text file and prints its contents to standard output
  * @filename: The name of the file to read
  * @letters: The maximum number of letters to read and print
- *
  * Return: The number of letters read and printed, or 0 if an error occurred
  */
 
