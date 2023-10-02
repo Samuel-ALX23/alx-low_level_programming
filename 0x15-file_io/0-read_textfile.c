@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * read_textfile - Reads a textfile and prints the contents to the POSIX STDOUT
- * @filename: The name of the file to read from
- * @letters: The number of characters it should print to the STDOUT
+ * read_textfile - Reads a textfile and prints the 
+ * contents to the POSIX STDOUT
+ * @filename: The number of command-line arguments
+ * @letters: An array of strings containing the command-line
+ * arguments to the STDOUT
  *
  * Return: Returns the number of characters printed
  */
