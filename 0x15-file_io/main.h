@@ -1,5 +1,5 @@
-#ifndef __MAIH_H__
-#define __MAIN_H__
+#ifndef _MAIH_H_
+#define _MAIN_H_
 
 #include <fcntl.h>
 #include <unistd.h>
