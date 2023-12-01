@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <dlfcn.h>
+
+int main()
+{
+	void* handle = dlopen("libc.so", RTLD_LAZY);
+	int (*original_rand)() = dlsym(handle, "rand");
+
+	srand(987654321);
+
+	int numbers[5];
+	for (int i = 0; i < 5; i++)
+	{
+		numbers[i] = (original_rand() % 75) + 1;
+	}
+
+	int bonus = (original_rand() % 15) + 1;
+
+	printf("The winning numbers are: ");
+	for (int i = 0; i < 5; i++)
+	{
+		printf("%d ", numbers[i]);
+	}
+	printf("%d\n", bonus);
+
+	return 0;
+}
